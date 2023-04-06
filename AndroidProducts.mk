@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/bliss_joan.mk
+    $(LOCAL_DIR)/blaze_joan.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_joan-userdebug \
-    bliss_joan-eng
+    blaze_joan-userdebug \
+    blaze_joan-eng
