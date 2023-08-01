@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/lineage_joan.mk
+    $(LOCAL_DIR)/cherish_joan.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_joan-userdebug \
-    lineage_joan-eng
+    cherish_joan-userdebug \
+    cherish_joan-eng

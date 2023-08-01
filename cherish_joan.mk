@@ -1,5 +1,5 @@
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
@@ -12,13 +12,22 @@ $(call inherit-product, device/lge/joan/device.mk)
 
 # Device identifiers
 PRODUCT_DEVICE := joan
-PRODUCT_NAME := lineage_joan
+PRODUCT_NAME := cherish_joan
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := joan
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RELEASE_NAME := V30
 
 PRODUCT_GMS_CLIENTID_BASE := android-om-lg
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Shahzeb Qureshi
+
+    # Target
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_FACE_UNLOCK_SUPPORTED := true
+CHERISH_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="joan" \
